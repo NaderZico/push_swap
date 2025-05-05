@@ -6,7 +6,7 @@
 #    By: nakhalil <nakhalil@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/11 01:15:49 by nakhalil          #+#    #+#              #
-#    Updated: 2025/05/05 14:06:12 by nakhalil         ###   ########.fr        #
+#    Updated: 2025/05/05 15:13:17 by nakhalil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,9 @@ $(NAME): $(OBJ) $(LIBFT)
 
 $(LIBFT):
 	@make -C $(LIBFT_DIR)
+      
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	@make -C $(LIBFT_DIR) clean

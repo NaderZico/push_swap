@@ -6,7 +6,7 @@
 /*   By: nakhalil <nakhalil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 01:17:44 by nakhalil          #+#    #+#             */
-/*   Updated: 2025/04/04 15:25:28 by nakhalil         ###   ########.fr       */
+/*   Updated: 2025/05/05 16:31:10 by nakhalil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,11 +86,4 @@ void	update_min_max(t_stack *stack)
 	find_min_max(stack, &min, &max);
 	stack->min_val = min;
 	stack->max_val = max;
-}
-
-void	print_stack(t_stack *stack)
-{
-    for (int i = 0; i < stack->size; i++)
-        printf("%d ", stack->data[i]);
-    printf("\n");
 }
