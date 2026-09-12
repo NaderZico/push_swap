@@ -20,8 +20,3 @@ make clean   # remove object files
 make fclean  # remove object files and binary
 make re      # rebuild from scratch
 ```
-
-## What I learned
-- Choosing algorithms based on data size and measuring operation counts
-- Applying complexity trade-offs instead of guessing
-- Structuring a C project across parsing, operations, sorting, and error handling
